@@ -2,6 +2,8 @@ require_relative '../lib/die'
 
 describe 'A die' do
 
+  let(:die) { Die.new }
+
   describe 'attributes' do
     it 'TODO' do
       skip
@@ -29,8 +31,9 @@ describe 'A die' do
   end
 
   describe '#to_s string representation' do
-    it 'TODO' do
-      skip
+    it 'has a string representation that is its face value' do
+      name = "1"
+      expect(die.to_s).to eq(name)
     end
   end
 
