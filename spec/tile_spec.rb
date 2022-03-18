@@ -2,6 +2,8 @@ require_relative '../lib/tile'
 
 describe 'A tile' do
 
+  let(:tile) { Tile.new }
+
   describe 'attributes' do
 
     it 'has a value' do
@@ -30,7 +32,8 @@ describe 'A tile' do
   describe '#to_s string representation' do
     context 'when up' do
       it 'shows its value within brackets' do
-        skip
+        name = "[1]"
+        expect(tile.to_s).to eq(name)
       end
     end
 
